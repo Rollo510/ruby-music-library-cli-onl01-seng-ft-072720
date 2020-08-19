@@ -1,8 +1,10 @@
+require 'pry'
+
 class Genre
+  
+extend Concerns::Findable
 
 attr_accessor :name
-
-extend Concerns::Findable
 
 @@all = []
 
